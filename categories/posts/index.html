@@ -54,11 +54,6 @@
 
 
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
 
 
   <meta name="generator" content="Hexo 7.3.0"></head>
@@ -68,27 +63,25 @@
 
     <div class="wrapper">
 
-      <div class="header" >
+      <div class="header">
   <div class="flex-container">
     <div class="header-inner">
       <div class="site-brand-container">
-        <a href="/" class="nav-title">
+        <a href="/">
           
-            Shuantt&#39;s Blog
+            Frame.
           
         </a>
       </div>
       <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
-        <span class="material-symbols-outlined">
-          menu
-          </span>
+        Menu
       </div>
       <nav class="site-nav">
-        <ul class="menu-list nav-item">
+        <ul class="menu-list">
           
             
               <li class="menu-item">
-                <a href="/categories/posts/">Posts</a>
+                <a href="/">Home</a>
               </li> 
                    
           
@@ -100,14 +93,10 @@
           
             
               <li class="menu-item">
-                <a href="/tag/">Tag</a>
+                <a href="/categories/gallery/">Gallery</a>
               </li> 
                    
           
-          
-            <li class="menu-item search-btn">
-              <a href="#">Search</a>
-            </li>
           
         </ul>
       </nav>
@@ -115,35 +104,6 @@
   </div>
 </div>
 
-<style>
-  .header{
-    position: sticky; 
-    top: 0; 
-    backdrop-filter: blur(5px);
-  }
-
-  .nav-title{
-    font-size: 1.5rem;
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .nav-item{
-    font-size: 1.2rem;
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-</style>
 
       <div class="main">
         <div class="flex-container">
@@ -180,11 +140,8 @@
                     <span class="post-date">
                         Jul 4, 2024
                     </span>
-                    <span class="post-content line-clamp-3">
-                        做個測試，順便試一下markdown語法
-                    </span>
                 </div>
-                <div class="post-img pic-wrap">
+                <div class="post-img">
                   
                 </div>
             </div>
@@ -231,13 +188,10 @@
                     <span class="post-date">
                         Jul 4, 2024
                     </span>
-                    <span class="post-content line-clamp-3">
-                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-                    </span>
                 </div>
-                <div class="post-img pic-wrap">
+                <div class="post-img">
                 
-                    <img class="pic" src="https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/test_img/cover1.jpeg" alt="featured_image">
+                    <img src="https://clio-space-1300725494.cos.ap-guangzhou.myqcloud.com/frame/test_img/cover1.jpeg" alt="featured_image">
                   
                 </div>
             </div>
@@ -249,35 +203,6 @@
     </div>
 </div>
 
-<style scoped>
-.pic-wrap{
-    /* border-radius: 1rem; */
-    aspect-ratio: 1/1;
-    max-height: 11.2rem;
-    overflow: hidden;
-}
-
-.pic{
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    object-fit: cover;
-}
-
-.post-content{
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-/* 偷tailwindcss的line-clamp-3 */
-.line-clamp-3{
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-}
-</style>
 </div>
 
 
@@ -289,8 +214,6 @@
         <div class="footer-text">
             
             
-                ©shuantt | 
-            
             
                 Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
                 
@@ -298,51 +221,8 @@
     </div>
 </div>
 
-<style scope>
-    .footer{
-        background-color: black;
-        color: gray;
-    }
-
-    .footer a{
-        color: gray;
-        font-weight: bold;
-    }
-</style>
-
     </div>
 
-    
-      <div class="search-popup">
-    <div class="search-popup-overlay">  
-    </div>
-    <div class="search-popup-window" >
-        <div class="search-header">
-            <div class="search-input-container">
-              <input autocomplete="off" autocapitalize="off" maxlength="80"
-                     placeholder="輸入查詢關鍵字 Search Anything" spellcheck="false"
-                     type="search" class="search-input">
-            </div>
-            <div class="search-close-btn">
-                <div class="icon close-btn"></div>
-            </div>
-        </div>
-        <div class="search-result-container">
-        </div>
-    </div>
-</div>
-
-<script>
-    const searchConfig = {
-        path             : "/search.json",
-        top_n_per_article: "1",
-        unescape         : "false",
-        trigger: "auto",
-        preload: "false"
-    }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
-<script src="/js/search.js"></script>
     
     
 
