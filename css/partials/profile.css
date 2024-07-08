@@ -4,7 +4,6 @@
   flex-direction: row-reverse;
 }
 .profile .profile-content {
-  width: 50%;
   margin: 0 $margin-l-0 0 0;
 }
 .profile .profile-content .profile-title {
