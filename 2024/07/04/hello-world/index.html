@@ -53,8 +53,6 @@
 
 
 
-    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
-
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -256,26 +254,29 @@
     
       <div class="post-comment">
 
-    
-        <div id="vcomments"></div>
-        <script>
-            var META = ['nick', 'mail', 'link'];
-            var meta = 'nick,mail';
-            meta = meta.split(',').filter(item => {
-                return META.includes(item);
-            });
-            new Valine({
-                el: '#vcomments',
-                appId: 'D31Mtrh5PQgylwjuwtt3pDgQ-MdYXbMMI',
-                appKey: 'r44mqI07Eg4Jut9NBdm4pzvS',
-                lang: 'en',
-                placeholder: 'Say something',
-                avatar: 'mp',
-                meta: meta
-            })
-        </script>    
      
 
+    
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            
+            var disqus_config = function () {
+                this.page.url = 'https://shuantt.github.io/2024/07/04/hello-world/';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '2024/07/04/hello-world/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                this.language = 'en'
+            };
+            
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'shuantts-blog';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   
      
     
     
