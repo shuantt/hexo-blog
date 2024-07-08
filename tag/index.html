@@ -116,13 +116,23 @@
           
             
               <li class="menu-item">
+                <a href="/tag/">Tags</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
                 <a href="/about/">About</a>
               </li> 
                    
           
           
             <li class="menu-item search-btn">
-              <a href="#">Search</a>
+              <a href="#">              
+                <span class="material-symbols-outlined">
+                  search
+                </span>
+              </a>
             </li>
           
         </ul>
@@ -130,6 +140,29 @@
     </div>
   </div>
 </div>
+
+<script>
+  let isSerachOn = false;
+  document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.key === 'k' && !isSerachOn) {
+      isSerachOn =true;
+      event.preventDefault();  
+      document.querySelector('.search-btn').click();  
+      const searchInput = document.querySelector('.search-input');
+      if (searchInput) {
+        searchInput.focus();
+      }
+    }
+    else if (event.ctrlKey && event.key === 'k' && isSerachOn){
+      isSerachOn = false;
+      event.preventDefault();  
+      document.querySelector('.search-close-btn').click();  
+    }
+    else if (event.key === 'Escape') {      
+      document.querySelector('.search-close-btn').click();
+    }
+  });
+</script>
 
 <style>
   .header{
@@ -159,6 +192,7 @@
   'GRAD' 0,
   'opsz' 24
 }
+
 </style>
 
       <div class="main">
@@ -168,40 +202,26 @@
 
     <p class="tag-title">/ tags /</p>
     <div class="tag-cloud">
+  <h2>英文標籤 - 按照字母排序</h2>
   <div class="tag-list">
     
       <span class="post-tag">
-        <a href="/tags/deploy/">
-          deploy
-        </a>
-      </span> 
+        <a href="/tags/hexo/"> hexo </a>
+      </span>
     
-      <span class="post-tag">
-        <a href="/tags/githubpage/">
-          githubpage
-        </a>
-      </span> 
+  </div>
+  
+  <h2>中文標籤 - 系列用</h2>
+  <div class="tag-list">
     
-      <span class="post-tag">
-        <a href="/tags/hexo/">
-          hexo
-        </a>
-      </span> 
-    
-      <span class="post-tag">
-        <a href="/tags/software/">
-          software
-        </a>
-      </span> 
-    
-      <span class="post-tag">
-        <a href="/tags/markdown/">
-          markdown
-        </a>
-      </span> 
-     
   </div>
 </div>
+
+<style scope>
+h2{
+  font-size: 1rem;
+}
+</style>
     
   
 
@@ -231,7 +251,7 @@
         <div class="search-header">
             <div class="search-input-container">
               <input autocomplete="off" autocapitalize="off" maxlength="80"
-                     placeholder="Search Anything" spellcheck="false"
+                     placeholder="輸入關鍵字 Search keywords..." spellcheck="false"
                      type="search" class="search-input">
             </div>
             <div class="search-close-btn">

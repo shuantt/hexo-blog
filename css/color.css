@@ -2,7 +2,9 @@
   color: #657b83;
 }
 .highlight table {
-  background: #fdf6e3;
+/* background: #fdf6e3; */
+  background: #f6f8fa;
+/* border-radius: 1rem; */
 }
 .highlight .code .comment,
 .highlight .code .quote {
