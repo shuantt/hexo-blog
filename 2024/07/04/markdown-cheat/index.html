@@ -53,6 +53,8 @@
 
 
 
+    <script src='https://unpkg.com/valine@1.4.16/dist/Valine.min.js'></script>
+
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -263,6 +265,24 @@
     
       <div class="post-comment">
 
+    
+        <div id="vcomments"></div>
+        <script>
+            var META = ['nick', 'mail', 'link'];
+            var meta = 'nick,mail';
+            meta = meta.split(',').filter(item => {
+                return META.includes(item);
+            });
+            new Valine({
+                el: '#vcomments',
+                appId: 'D31Mtrh5PQgylwjuwtt3pDgQ-MdYXbMMI',
+                appKey: 'r44mqI07Eg4Jut9NBdm4pzvS',
+                lang: 'en',
+                placeholder: 'Say something',
+                avatar: 'mp',
+                meta: meta
+            })
+        </script>    
      
 
      
