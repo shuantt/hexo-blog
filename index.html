@@ -119,12 +119,6 @@
               </li> 
                    
           
-            
-              <li class="menu-item">
-                <a href="/about/">About</a>
-              </li> 
-                   
-          
           
             <li class="menu-item search-btn">
               <a href="#">              
@@ -202,23 +196,70 @@
     </div> -->
     <div class="post-content profile-content">
         <div class="profile-title">
-            都說工程師要寫部落格
+            都說工程師要寫部落格所以就開了
         </div>
         <div class="profile-body">
-            後端工程師，但想要往前端走，興趣廣泛但不求甚解，這邊就是做一些紀錄和心得。
+            嗨，我是 Shuan ，目標是當位合格的全端開發者，未來也想寫遊戲和APP，喜歡學習新事物，雖然有點 5 分鐘熱度，想認識一起學習的夥伴，歡迎留言或聯絡我 :)
         </div>
-        
+        <div class="profile-icon">
+            <button id="btn-git"><i class="fa-brands fa-github"></i></button>
+            <button id="btn-mail"><i class="fa-solid fa-envelope"></i></button>
+        </div>
+        <h4>關於我</h4>
+        <ul>
+            <li>轉職工程師 (迷途羔羊 理 > 文 > 設計 > 軟體 轉好轉滿)</li>
+            <li>熱愛學習新事物 (但大概 3 個月會換一項)</li>
+            <li>有點完美主義和強迫症 (無法掌控時會放飛自我)</li>
+            <li>因為夢想是寫遊戲所以先學的C# (雖然一個 untiy 專案都還沒開過)</li>
+            <li>目標 45 歲財富自由 (媽媽說講出來才會顯化)</li>
+        </ul>
+        <h4>技術使用</h4>
+        <ul>
+            <li><strong>前端: </strong>Tailwind / Vue3 (Nuxt3) </li>
+            <li><strong>後端: </strong> .NET / Node.js </li>
+            <li><strong>資料庫:</strong> MSSQL / MongoDB </li>
+        </ul>
+        <div style="margin-top: 2rem;">
+            
             <div class="profile-link">
                 <a href="/archives/">所有貼文</a> 
             </div>           
-        
+            
             <div class="profile-link">
-                <a href="/about/">關於我</a> 
+                <a href="/tags/">標籤查看系列</a> 
             </div>           
-        
+            
+        </div>
     </div>
-    
 </div>
+
+<style scope>
+profile-icon{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 2rem;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+</style>
+
+<script>
+const gitBtn = document.getElementById('btn-git');
+gitBtn.addEventListener('click', () => {
+    window.open('https://github.com/shuantt', '_blank');
+})
+
+const mailBtn = document.getElementById('btn-mail');
+mailBtn.addEventListener('click', () => {
+    window.open('mailto:tehsuan.tht@gmail.com', '_blank');
+})
+
+</script>
         </div>
       </div>
       
@@ -226,6 +267,8 @@
     <div class="flex-container">
         <div class="footer-text">
             
+            
+                shuantt | 
             
             
                 Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://github.com/zoeingwingkei/frame/">Frame</a>
