@@ -87,7 +87,7 @@
 
     <div class="wrapper">
 
-      <div class="header">
+      <div class="header" style="z-index: 1;">
   <div class="flex-container">
     <div class="header-inner">
       <div class="site-brand-container" >
@@ -201,7 +201,8 @@
 
       <div class="main">
         <div class="flex-container">
-          <article id="post">
+          <div class="left-content">
+            <article id="post">
 
   
     <div class="post-head">
@@ -318,6 +319,38 @@
      
   
 </article>
+          </div>
+          <div class="right-content">
+            
+<div id="toc" >
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+</div>
+
+
+<style>
+#toc{
+  background-color: #f6f8fa;
+  padding: 8px 20px;
+  position: sticky;
+  top:284px;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; 
+}
+
+#toc ol{
+  list-style-type: square ;
+  padding-left: 1;
+  padding-inline-start: 16px;
+}
+
+.toc-text:hover{
+  text-decoration: underline;
+  opacity: 50%;
+  transition: all 0.3s ease;
+}
+</style>
+          </div>
         </div>
       </div>
       
@@ -334,9 +367,9 @@
         </div>
     </div>
 </div>
-
+      
     </div>
-
+    
     
       <div class="search-popup">
     <div class="search-popup-overlay">  
@@ -368,10 +401,9 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
 <script src="/js/search.js"></script>
-    
-    
-
-  </body>
+      
+      
+    </body>
 </html>
 
 <style>

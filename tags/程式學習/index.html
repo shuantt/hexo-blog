@@ -87,7 +87,7 @@
 
     <div class="wrapper">
 
-      <div class="header">
+      <div class="header" style="z-index: 1;">
   <div class="flex-container">
     <div class="header-inner">
       <div class="site-brand-container" >
@@ -201,7 +201,8 @@
 
       <div class="main">
         <div class="flex-container">
-          <div id="tag">
+          <div class="left-content">
+            <div id="tag">
   
 
     <p class="tag-title">
@@ -258,6 +259,38 @@
   
 
 </div>
+          </div>
+          <div class="right-content">
+            
+<div id="toc" >
+  
+</div>
+
+
+<style>
+#toc{
+  background-color: #f6f8fa;
+  padding: 8px 20px;
+  position: sticky;
+  top:284px;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; 
+}
+
+#toc ol{
+  list-style-type: square ;
+  padding-left: 1;
+  padding-inline-start: 16px;
+}
+
+.toc-text:hover{
+  text-decoration: underline;
+  opacity: 50%;
+  transition: all 0.3s ease;
+}
+</style>
+          </div>
         </div>
       </div>
       
@@ -274,9 +307,9 @@
         </div>
     </div>
 </div>
-
+      
     </div>
-
+    
     
       <div class="search-popup">
     <div class="search-popup-overlay">  
@@ -308,10 +341,9 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js"></script>
 <script src="/js/search.js"></script>
-    
-    
-
-  </body>
+      
+      
+    </body>
 </html>
 
 <style>
