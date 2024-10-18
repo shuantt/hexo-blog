@@ -616,7 +616,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 0.5rem;
 }
 .profile .profile-content .profile-body {
-  width: 70%;
+  width: 80%;
   margin-top: 0;
   margin-bottom: 2rem;
 }
@@ -644,13 +644,16 @@ input[type="search"]::-webkit-search-results-decoration {
 .profile .profile-image {
   width: 50%;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .profile {
     flex-wrap: wrap;
   }
   .profile .profile-content {
     width: 100%;
     margin-top: 0.75rem;
+  }
+  .profile .profile-content .profile-body {
+    width: 100%;
   }
   .profile .profile-image {
     width: 100%;
