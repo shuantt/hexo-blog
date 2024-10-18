@@ -522,7 +522,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .post-gallery-item .post-info {
   margin-right: 1.5rem;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -540,7 +540,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #373633;
 }
 .post-gallery-item .post-img {
-  width: 50%;
+  width: 40%;
 }
 .post-gallery-item a {
   background-image: linear-gradient(#fff, #fff), linear-gradient(#373633, #373633);
