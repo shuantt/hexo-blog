@@ -87,56 +87,46 @@
 
     <div class="wrapper">
 
-      <div class="header" style="z-index: 1;">
+      <div class="header" style="z-index: 1">
   <div class="flex-container">
     <div class="header-inner">
-      <div class="site-brand-container" >
+      <div class="site-brand-container">
         <a href="/" class="nav-title">
-          
-            Shuantt&#39;s Blog
-          
+           Shuantt&#39;s Blog 
         </a>
       </div>
       <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
-         <span class="material-symbols-outlined">
-          menu
-          </span>
+        <span class="material-symbols-outlined"> menu </span>
       </div>
       <nav class="site-nav">
         <ul class="menu-list nav-item">
-          
+           
+          <li class="menu-item">
+            <a href="/">Home</a>
+          </li>
             
-              <li class="menu-item">
-                <a href="/">Home</a>
-              </li> 
-                   
-          
+          <li class="menu-item">
+            <a href="/categories/posts/">Posts</a>
+          </li>
             
-              <li class="menu-item">
-                <a href="/categories/posts/">Posts</a>
-              </li> 
-                   
-          
+          <li class="menu-item">
+            <a href="/archives/">Archive</a>
+          </li>
             
-              <li class="menu-item">
-                <a href="/archives/">Archive</a>
-              </li> 
-                   
-          
+          <li class="menu-item">
+            <a href="/tag/">Tags</a>
+          </li>
             
-              <li class="menu-item">
-                <a href="/tag/">Tags</a>
-              </li> 
-                   
-          
-          
-            <li class="menu-item search-btn">
-              <a href="#">              
-                <span class="material-symbols-outlined">
-                  search
-                </span>
-              </a>
-            </li>
+          <li class="menu-item search-btn">
+            <a target="_blank" rel="noopener" href="https://github.com/shuantt">
+              <i class="fa-brands fa-github" style="color: black"></i>
+            </a>
+          </li>
+          <li class="menu-item search-btn">
+            <a href="#">
+              <span class="material-symbols-outlined"> search </span>
+            </a>
+          </li>
           
         </ul>
       </nav>
@@ -146,58 +136,52 @@
 
 <script>
   let isSerachOn = false;
-  document.addEventListener('keydown', function(event) {
+  document.addEventListener('keydown', function (event) {
     if (event.ctrlKey && event.key === 'k' && !isSerachOn) {
-      isSerachOn =true;
-      event.preventDefault();  
-      document.querySelector('.search-btn').click();  
+      isSerachOn = true;
+      event.preventDefault();
+      document.querySelector('.search-btn').click();
       const searchInput = document.querySelector('.search-input');
       if (searchInput) {
         searchInput.focus();
       }
-    }
-    else if (event.ctrlKey && event.key === 'k' && isSerachOn){
+    } else if (event.ctrlKey && event.key === 'k' && isSerachOn) {
       isSerachOn = false;
-      event.preventDefault();  
-      document.querySelector('.search-close-btn').click();  
-    }
-    else if (event.key === 'Escape') {      
+      event.preventDefault();
+      document.querySelector('.search-close-btn').click();
+    } else if (event.key === 'Escape') {
       document.querySelector('.search-close-btn').click();
     }
   });
 </script>
 
 <style>
-  .header{
-    position: sticky; 
-    top: 0; 
+  .header {
+    position: sticky;
+    top: 0;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
 
-  .nav-title{
+  .nav-title {
     font-size: 1.5rem;
-    font-family: "VT323", monospace;
+    font-family: 'VT323', monospace;
     font-weight: 400;
     font-style: normal;
   }
 
-  .nav-item{
+  .nav-item {
     font-size: 1.2rem;
-    font-family: "VT323", monospace;
+    font-family: 'VT323', monospace;
     font-weight: 400;
     font-style: normal;
   }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
 </style>
+
 
       <div class="main">
         <div class="flex-container">
