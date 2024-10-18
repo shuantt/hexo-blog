@@ -11,6 +11,7 @@
   margin-bottom: $margin-m-0;
 }
 .profile .profile-content .profile-body {
+  width: 70%;
   margin-top: 0;
   margin-bottom: $margin-l-1;
 }
