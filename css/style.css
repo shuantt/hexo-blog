@@ -528,9 +528,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .post-gallery-item .post-info .post-title {
   margin-bottom: 0.75rem;
-  font-size: 1.75rem;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 2.25rem;
+  line-height: 1.5rem;
   color: #373633;
 }
 .post-gallery-item .post-info .post-date {
