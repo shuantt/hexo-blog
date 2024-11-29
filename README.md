@@ -1,3 +1,5 @@
+## 找到更喜歡的部落格就棄用了
+
 ## Hexo Theme Setup and Customization
 - **Theme**: [Frame](https://github.com/zoeingwingkei/frame/) 
 - **Search**: Integrated `local_search` with custom `Ctrl+K` shortcut.
